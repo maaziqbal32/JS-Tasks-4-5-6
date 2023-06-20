@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Tip Caculator</title>
+</head>
+<body style="text-align: center;">
+    <h1 style="text-align: center;">Simple Tip Calculate Calculator by Using If/Else!!!</h1>
+
+
+
+    <script>
+         const bill = 250; 
+         if(bill >= 50 && bill <= 300){     
+         const tip=bill*0.15;      
+         const totalValue=bill+tip;
+         document.write(`<h1> The Bill Is: ${bill} <br><h1>`);
+         document.write(`<h1> So The Tip Is: ${tip} <br><h1>`);
+         document.write(`<h3>The Bill Was ${bill} and The Tip is ${tip}.</h3>`);
+         document.write(`<h3>So The Total Amount = ${totalValue}</h3>`);
+
+      }
+      else{
+        const tip=bill*0.2;
+        const totalValue=bill+tip;
+        document.write(`<h1> The Tip Is: ${tip} <br><h1>`);
+        document.write(`<h3>The Bill Was ${bill} and The Tip is ${tip}.</h3>`);
+        document.write(`<h3>So The Total Amount = ${totalValue}</h3>`);
+
+
+        
+      }
+      document.write(`<br><br><br>`)
+      document.write(`<h1>Tip Caculator By Using The Ternary Operator!!!</h1>`)
+ 
+    //  Tip Caculator Using the Ternary Operators
+        const Bill=400;
+        document.write(`<h1>The Bill is: ${Bill}</h1>`)
+
+    //    ternary opertaor First Condition ? then right hand side : and then left hand side  
+       const Tip = Bill >= 50 && Bill <= 300 ? Bill * 0.15 : Bill * 0.2;
+       document.write(`<h1>So The Tip is :${Tip}</h1>`)
+
+       const TotalValue = Bill + Tip;  
+       document.write(`<h3>The bill was ${Bill}, the Tip was ${Tip}, and the Total Value ${TotalValue}</h3>`);
+       
+    </script>
+</body>
+</html>
